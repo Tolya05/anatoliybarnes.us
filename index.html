@@ -1,90 +1,82 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-  <body>
+<body>
     <div class="w3-bar w3-black">
-      <a href="#" class="w3-button w3-bar-item">Home</a>
-      <a href="#projects" class="w3-button w3-bar-item">Projects</a>
-      <a href="#about" class="w3-button w3-bar-item">About</a>
-    </div>
-    
-    <div id="projects" class="w3-container w3-center">
-      <h1>My Projects</h1>
-      <div class="w3-row-padding">
-        <div class="w3-col l3 m6 s2">
-          <div class="w3-card w3-margin-bottom">
-            <img src="imgs/todo/img1.png" alt="To-Do App Blank" style="width:25%" onclick="document.getElementById('todo1').style.display='block'">
-            <img src="imgs/todo/img2.png" alt="To-Do App Filled" style="width:25%" onclick="document.getElementById('todo2').style.display='block'">
-            <div class="w3-container">
-              <h4>To do App</h4>
-              <p>A basic To-Do App made with PyQt6. Features:</p>
-              <ul>
-                <li>Add tasks to list</li>
-                <li>Remove tasks from list</li>
-                <li>Scrollable list for when you have a lot of tasks</li>
-                <li>You can save your list and safely save your list</li>
-                <li>You can load a previously saved list</li>
-              </ul>
-              <a href="https://github.com/Tolya05/PyQt-To-do" class="w3-button w3-black w3-margin-bottom">View on GitHub</a>
-              <a href="https://github.com/Tolya05/PyQt-To-do/raw/main/main.exe" class="w3-button w3-black w3-margin-bottom">Download EXE</a>
-            </div>
-          </div>
-        
-        
-          <div id="todo1" class="w3-modal">
-            <img src="imgs/todo/img1.png" alt="Full size image" class="w3-modal-content" style="width:75%">
-            <button class="w3-button w3-display-topright" onclick="document.getElementById('todo1').style.display='none'">&times;</button>
-          </div>
-          <div id="todo2" class="w3-modal">
-            <img src="imgs/todo/img2.png" alt="Full size image" class="w3-modal-content" style="width:75%">
-            <button class="w3-button w3-display-topright" onclick="document.getElementById('todo2').style.display='none'">&times;</button>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 s2">
-          <div class="w3-card w3-margin-bottom">
-            <img src="imgs/username_generator/img1.png" alt="Username Generator - Dark Mode" style="width:25%" onclick="document.getElementById('usr1').style.display='block'">
-            <img src="imgs/username_generator/img2.png" alt="Username Generator - Light Mode" style="width:25%" onclick="document.getElementById('usr2').style.display='block'">
-            <div class="w3-container">
-              <h4>A username generator</h4>
-              <p>A basic PyQt6 app. Features:</p>
-              <ul>
-                <li>Takes up to 3 words as input</li>
-                <li>Suffles the letters to create random names</li>
-                <li>Securely generates a password using cryptography</li>
-                <li>A Light/Dark mode switch</li>
-              </ul>
-              <a href="https://github.com/Tolya05/Tolya-PyQt-Username-Generato" class="w3-button w3-black w3-margin-bottom">View on GitHub</a>
-              <a href="https://github.com/Tolya05/Tolya-PyQt-Username-Generato/raw/main/UsernameGen.exe" class="w3-button w3-black w3-margin-bottom">Download EXE</a>
-            </div>
-
-            <div id="usr1" class="w3-modal">
-              <img src="imgs/username_generator/img1.png" alt="Full size image" class="w3-modal-content" style="width:75%">
-              <button class="w3-button w3-display-topright" onclick="document.getElementById('usr1').style.display='none'">&times;</button>
-            </div>
-            <div id="usr2" class="w3-modal">
-              <img src="imgs/username_generator/img2.png" alt="Full size image" class="w3-modal-content" style="width:75%">
-              <button class="w3-button w3-display-topright" onclick="document.getElementById('usr2').style.display='none'">&times;</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        <!-- Add additional project cards here -->
+        <a href="#" class="w3-button w3-bar-item">Home</a>
+        <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+        <a href="#about" class="w3-button w3-bar-item">About</a>
       </div>
-    </div>
-    <div id="about" class="w3-center">
-      <h1 class="w3-xxx w3-black">About Me</h1>
-      <p>Hi, my name is Anatoliy Konovalchuk. I'm Ukainian-American and I love doing things like drawing, writing, and coding.</p>
-      <p>This is my website to showcase the cool programs I made. I current code with Python only, but I'm currently planning on learning C#.</p>
-    </div>
-    
-    <div class="w3-display-container w3-black w3-display-bottom w3-center">
-      <p>Copyright &copy; Anatoliy Konovalchuk</p>
-      <a href="https://twitter.com/AnatoliyK05" target="_blank"><img src="imgs/smicons/twitter.png" alt="Twitter"></a>
-      <a href="https://instagram.com/AnatoliyK05" target="_blank"><img src="imgs/smicons/instagram.png" alt="Instagram"></a>
-      <a href="https://github.com/Tolya05" target="_blank"><img src="imgs/smicons/github.png" alt="GitHub"></a>
-    </div>
+      
+      <div id="projects" class="w3-container w3-center">
+        <h1>My Projects</h1>
+        <div class="w3-row-padding">
+          <div class="w3-col l3 m6 s12" style="width:100%;">
+            <div class="w3-card w3-margin-bottom">
+              <img src="imgs/todo/img1.png" alt="To-Do App Blank" style="width:25%" onclick="document.getElementById('todo1').style.display='block'">
+              <img src="imgs/todo/img2.png" alt="To-Do App Filled" style="width:25%" onclick="document.getElementById('todo2').style.display='block'">
+              <div class="w3-container">
+                <h4>To do App</h4>
+                <p>A basic To-Do App made with PyQt6. Features:</p>
+                <ul>
+                  <li>Add tasks to list</li>
+                  <li>Remove tasks from list</li>
+                  <li>Scrollable list for when you have a lot of tasks</li>
+                  <li>You can save your list and safely save your list</li>
+                  <li>You can load a previously saved list</li>
+                </ul>
+                <a href="https://github.com/Tolya05/PyQt-To-do" class="w3-button w3-black w3-margin-bottom">View on GitHub</a>
+                <a href="https://github.com/Tolya05/PyQt-To-do/raw/main/main.exe" class="w3-button w3-black w3-margin-bottom">Download EXE</a>
+              </div>
+            </div>
+          
+            <div id="todo1" class="w3-modal">
+                <img src="imgs/todo/img1.png" alt="Full size image" class="w3-modal-content" style="width:75%">
+                <button class="w3-button w3-display-topright" onclick="document.getElementById('todo1').style.display='none'">&times;</button>
+              </div>
+              <div id="todo2" class="w3-modal">
+                <img src="imgs/todo/img2.png" alt="Full size image" class="w3-modal-content" style="width:75%">
+                <button class="w3-button w3-display-topright" onclick="document.getElementById('todo2').style.display='none'">&times;</button>
+              </div>
 
-  </body>
-</html>
+              <div class="w3-col l3 m6 s12" style="width:100%;">
+                <div class="w3-card w3-margin-bottom">
+                  <img src="imgs/username_generator/img1.png" alt="Username Generator - Dark Mode" style="width:25%" onclick="document.getElementById('usr1').style.display='block'">
+                  <img src="imgs/username_generator/img2.png" alt="Username Generator - Light Mode" style="width:25%" onclick="document.getElementById('usr2').style.display='block'">
+                  <div class="w3-container">
+                    <h4>A username generator</h4>
+                    <p>A basic PyQt6 app. Features:</p>
+                    <ul>
+                      <li>Takes up to 3 words as input</li>
+                      <li>Generates a list of usernames based on the input</li>
+                      <li>Light and Dark Mode</li>
+                      <li>Copy usernames to clipboard</li>
+                    </ul>
+                    <a href="https://github.com/Tolya05/PyQt-Username-Generator" class="w3-button w3-black w3-margin-bottom">View on GitHub</a>
+                    <a href="https://github.com/Tolya05/PyQt-Username-Generator/raw/main/main.exe" class="w3-button w3-black w3-margin-bottom">Download EXE</a>
+                  </div>
+                </div>
+                
+                <div id="usr1" class="w3-modal">
+                  <img src="imgs/username_generator/img1.png" alt="Full size image" class="w3-modal-content" style="width:75%">
+                  <button class="w3-button w3-display-topright" onclick="document.getElementById('usr1').style.display='none'">&times;</button>
+                </div>
+                <div id="usr2" class="w3-modal">
+                  <img src="imgs/username_generator/img2.png" alt="Full size image" class="w3-modal-content" style="width:75%">
+                  <button class="w3-button w3-display-topright" onclick="document.getElementById('usr2').style.display='none'">&times;</button>
+                </div>
+              </div>
+              
+              <!-- More project cards go here -->
+              </div>
+              </div>
+              
+              <!-- Footer -->
+              <div class="w3-display-container w3-black w3-display-bottom w3-center">
+                <p>Copyright &copy; Anatoliy Konovalchuk</p>
+                <a href="https://twitter.com/AnatoliyK05" target="_blank"><img src="imgs/smicons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com/AnatoliyK05" target="_blank"><img src="imgs/smicons/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/Tolya05" target="_blank"><img src="imgs/smicons/github.png" alt="GitHub"></a>
+              </div>
+</body>  
