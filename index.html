@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>PyScipt</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/outboxcraft/beauter/master/beauter.min.css
+    "/>
+  </head>
+  <body>
+    <center>
+      <br>
+      <h2>To Do List</h2>
+      <h4>Input a Task</h4>
+      <h4>Input an existing task to Delete it</h4>
+      <div class="row center">
+        <input id="input" type="text" placeholder="Enter a task . . .">
+        <button py-click="add_task()" id="py_btn">Add Task</button>
+      </div>
+      <div id="item_list"><h5>No Tasks are set</h5></br></div>
+      <py-script src="/main.py"></py-script>
+    </center>
+  </body>
+</html>
